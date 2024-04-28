@@ -1,7 +1,32 @@
-public class ContaTerminal {
-    public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+import java.util.Scanner;
+import java.util.Locale;
 
-        System.out.println("Hello, World!");
+public class ContaTerminal {
+    public static void main(String[] args) {
+        //TODO: Conhecer e importar a classe Scanner
+
+        //Exibir as mensagens para o nosso usuário
+
+        //Obter pela Scanner os valores digitados no terminal
+
+        //Exibir a mensagem conta criada
+
+        
+        Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
+
+        System.out.println("Olá! Bem-vindo(a) ao banco Jujubas! Informe o seu nome, por favor.");
+        String nomeCliente = scanner.next();
+
+        System.out.println("Por favor, digite o número da sua conta:");
+        int numero = scanner.nextInt();
+
+        System.out.println("Informe a sua agência: (exemplo: xxx-x)");
+        String agencia = scanner.next();
+
+        System.out.println("Qual o valor do saldo?");
+        double saldo = scanner.nextDouble();
+
+        System.out.println("Olá " + nomeCliente + ", obrigado por criar uma conta em nosso banco. Sua agência é " + agencia + ", conta " + numero + " e seu saldo de R$" + saldo + " já está disponível para saque.");
+
     }
 }
