@@ -3,15 +3,7 @@ import java.util.Locale;
 
 public class ContaTerminal {
     public static void main(String[] args) {
-        //TODO: Conhecer e importar a classe Scanner
 
-        //Exibir as mensagens para o nosso usuário
-
-        //Obter pela Scanner os valores digitados no terminal
-
-        //Exibir a mensagem conta criada
-
-        
         Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
 
         System.out.println("Olá! Bem-vindo(a) ao banco Jujubas! Informe o seu nome, por favor.");
